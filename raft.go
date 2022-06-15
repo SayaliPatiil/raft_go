@@ -1500,7 +1500,7 @@ func (r *Raft) appendEntries(rpc RPC, a *AppendEntriesRequest) {
 	// Everything went well, set success
 	resp.Success = true
 	r.setLastContact()
-	return
+	
 }
 
 // processConfigurationLogEntry takes a log entry and updates the latest
